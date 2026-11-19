@@ -4,7 +4,7 @@
 class Verbacue < Formula
   desc "Transcribe, translate and lay out subtitles for any video, on your own computer"
   homepage "https://github.com/ksrichard/verbacue"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
 
   livecheck do
@@ -15,18 +15,18 @@ class Verbacue < Formula
   on_macos do
     # One universal binary for Apple Silicon and Intel, with Metal.
     url "https://github.com/ksrichard/verbacue/releases/download/v#{version}/verbacue-macos-universal-metal.tar.gz"
-    sha256 "4042ef41c4c90f4d5ec9fa26ed4c6a30f1a2d11ec70e6aa55056475e67e32806"
+    sha256 "52e61311c06ba03662bac71e9bc72e0455af0422a958e2d749764a0fddddfd02"
   end
 
   on_linux do
     # The CPU builds with the desktop app; they need glibc 2.35 or newer.
     on_intel do
       url "https://github.com/ksrichard/verbacue/releases/download/v#{version}/verbacue-linux-amd64-cpu-gui.tar.gz"
-      sha256 "b71bf16bb88a1f1ce105aaa22d60856c5f1445959684b51640baf82667ace2ff"
+      sha256 "36257a1f3afa3c8719b3613359f4a09ffb55899126d273c5a43ea20f4584faa5"
     end
     on_arm do
       url "https://github.com/ksrichard/verbacue/releases/download/v#{version}/verbacue-linux-arm64-cpu-gui.tar.gz"
-      sha256 "a6d3f4d6390b72c665dc23b9150be96a60bcb91fb65657ea14f713ea05558837"
+      sha256 "4bf7d57ac49632e495a469e914840a040a8b52e28db6a8452de05fe4ed4fe510"
     end
   end
 
